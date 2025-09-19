@@ -94,12 +94,12 @@
   <script id="gamesData" type="application/json">
 [
   {
-    "name": "OFF BRAND CLASH ROYALE",
-    "url": "https://html5.gamedistribution.com/rvvASMiM/7fb6eddc884e4a0380f40410134650a3/index.html"
+    "name": "",
+    "url": ""
   },
   {
-    "name": "Clash Royale Real",
-    "url": "https://www.easyfun.gg/embed/clash-royale-cloud-online.html?start=1"
+    "name": "",
+    "url": ""
   }
 ]
   </script>
@@ -111,8 +111,8 @@ let autoGames = [];
 // 🔥 Load ALL games from local games.json (root folder)
 async function loadLocalGames() {
   try {
-    const res = await fetch("games.json"); // root folder
-    if (!res.ok) throw new Error("games.json not found");
+    const res = await fetch("smt.json"); // root folder
+    if (!res.ok) throw new Error("smt.json not found");
     const files = await res.json();
 
     autoGames = files.map(name => ({
